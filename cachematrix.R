@@ -1,6 +1,6 @@
 ## Put comments here that give an overall description of what your
 ## functions do
-## Description: The following code creates a pair of functions that cache the inverse of a matrix.
+## Description: The following code creates a pair of functions that allow a user to create a matrix and cache the inverse of the matrix.
 
 ## Write a short comment describing this function
 ## creates a special "matrix" object that can cache its inverse
@@ -9,7 +9,7 @@ makeCacheMatrix <- function(x = matrix()) {
         ## initialize inverse variable to NULL
         inverse <- NULL
         
-        ## define function to set matrix value and clear inverse variable
+        ## define function to set matrix value x and clear inverse variable
         setmatrix <- function(y) {
                 x <<- y
                 inverse <<- NULL
@@ -18,7 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
         ## define function to return matrix stored in variable x
         getmatrix <- function() x
         
-        ## define function to assign passed argument to inverse variable
+        ## define function to assign passed argument z to inverse variable
         setinverse <- function(z) inverse <<- z
         
         ## define function to return inverse variable
